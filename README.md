@@ -10,10 +10,10 @@ Try It
 $ git clone https://github.com/rlue/nelson-scandela
 $ cd nelson-scandela
 $ bundle install
-$ bundle exec rackup
+$ ruby app.rb
 ```
 
-Then, visit http://localhost:9292/xxx, where `xxx` is the string you wish to
+Then, visit http://localhost:4567/xxx, where `xxx` is the string you wish to
 encode.
 
 Why?

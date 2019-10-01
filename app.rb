@@ -3,6 +3,8 @@ require 'barby'
 require 'barby/barcode/code_128'
 require 'barby/outputter/html_outputter'
 
+set :bind, '0.0.0.0'
+
 get '/:id' do
   <<~HTML
     <!DOCTYPE html>
