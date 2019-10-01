@@ -3,6 +3,9 @@ Nelson Scandela
 
 A barebones Sinatra app for generating barcodes.
 
+![Demo screenshot of
+app](https://raw.githubusercontent.com/rlue/i/master/nelson-scandela/screenshot.png)
+
 Try It
 ------
 
@@ -19,7 +22,7 @@ encode.
 Why?
 ----
 
-![Barcode checkout at Family Mart convenience store](https://images.chinatimes.com/newsphoto/2016-09-19/656/20160919004899.jpg)
+![Barcode checkout at Family Mart convenience store](https://raw.githubusercontent.com/rlue/i/master/nelson-scandela/family_mart_checkout.jpg)
 
 In Taiwan (where I live), many commercial services can be purchased online and
 paid for in person at a convenience store by presenting a vendor-supplied
