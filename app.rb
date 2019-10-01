@@ -29,3 +29,10 @@ get '/:id' do
     </html>
   HTML
 end
+
+get '/robots.txt' do
+  <<~TXT
+    User-agent: *
+    Disallow: /
+  TXT
+end
