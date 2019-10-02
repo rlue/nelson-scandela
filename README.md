@@ -10,6 +10,9 @@ Try It
 ------
 
 ```sh
+$ docker run --rm -p 4567:4567 rlue/nelson-scandela
+
+# or raw-dog it
 $ git clone https://github.com/rlue/nelson-scandela
 $ cd nelson-scandela
 $ bundle install
