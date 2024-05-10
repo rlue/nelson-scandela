@@ -1,7 +1,7 @@
 Nelson Scandela
 ===============
 
-A barebones Sinatra app for generating barcodes.
+A barebones app for generating barcodes.
 
 ![Demo screenshot of
 app](https://raw.githubusercontent.com/rlue/i/master/nelson-scandela/screenshot.png)
@@ -10,17 +10,16 @@ Try It
 ------
 
 ```sh
-$ docker run --rm -p 4567:4567 rlue/nelson-scandela
+$ docker run --rm -p 9292:9292 rlue/nelson-scandela
 
 # or raw-dog it
 $ git clone https://github.com/rlue/nelson-scandela
 $ cd nelson-scandela
 $ bundle install
-$ ruby app.rb
+$ rake serve
 ```
 
-Then, visit http://localhost:4567/xxx, where `xxx` is the string you wish to
-encode.
+Then, visit <http://localhost:9292> for directions.
 
 Why?
 ----
@@ -38,7 +37,7 @@ barcode instead.
 
 Of course, many existing web apps do just this, but the ones I’ve found work
 via an HTML form and POST request, meaning generated barcodes cannot be
-bookmarked for future use. In contrast, this app uses a URL parameter and GET
+bookmarked for future use. In contrast, this app uses the URL path and a GET
 request.
 
 ### Caveat: Why don’t other apps use GET endpoints?

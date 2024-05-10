@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     barby (0.6.9)
+    chunky_png (1.4.0)
     nio4r (2.7.3)
     puma (6.4.2)
       nio4r (~> 2.0)
@@ -13,6 +14,12 @@ GEM
     rake (13.2.1)
     roda (3.80.0)
       rack
+    rqrcode (2.2.0)
+      chunky_png (~> 1.0)
+      rqrcode_core (~> 1.0)
+    rqrcode_core (1.2.0)
+    semacode (0.7.4)
+      rake (>= 0.7.0)
     webrick (1.8.1)
 
 PLATFORMS
@@ -26,6 +33,8 @@ DEPENDENCIES
   rackup
   rake
   roda
+  rqrcode
+  semacode
 
 RUBY VERSION
    ruby 3.3.0p0
