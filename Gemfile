@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
-ruby '2.7.0'
+ruby '3.3.0'
+
 gem 'barby'
-gem 'sinatra'
+gem 'puma'
+gem 'roda'
+
+group :development do
+  gem 'rack-unreloader'
+  gem 'rackup'
+  gem 'rake'
+end
