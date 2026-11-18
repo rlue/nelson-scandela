@@ -5,12 +5,10 @@ MAINTAINER Ryan Lue <hello@ryanlue.com>
 WORKDIR /app
 COPY . /app
 
-# system libraries for nio4r
-RUN apk add --no-cache --update \
-    build-base \
-    && gem update bundler \
+# All gems are pure Ruby, so no build-base.
+RUN gem update bundler \
     && bundle config set without 'development' \
     && bundle install
 
 EXPOSE 9292
-CMD ["bundle", "exec", "puma", "-b", "tcp://0.0.0.0:9292", "-e", "production", "config.ru"]
+CMD ["bundle", "exec", "rackup", "--server", "webrick", "--env", "production", "--host", "0.0.0.0", "--port", "9292", "config.ru"]

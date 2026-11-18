@@ -1,11 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    barby (0.6.9)
+    barby (0.7.0)
+    builder (3.3.0)
     chunky_png (1.4.0)
-    nio4r (2.7.3)
-    puma (6.4.2)
-      nio4r (~> 2.0)
+    dmtx (1.0.1)
+      builder
+      chunky_png
+    logger (1.7.0)
+    ostruct (0.6.3)
     rack (3.0.11)
     rack-unreloader (2.1.0)
     rackup (2.1.0)
@@ -18,8 +21,6 @@ GEM
       chunky_png (~> 1.0)
       rqrcode_core (~> 1.0)
     rqrcode_core (1.2.0)
-    semacode (0.7.4)
-      rake (>= 0.7.0)
     webrick (1.8.1)
 
 PLATFORMS
@@ -27,17 +28,19 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  barby
-  puma
+  barby (~> 0.7)
+  dmtx
+  logger
+  ostruct
   rack-unreloader
   rackup
   rake
   roda
   rqrcode
-  semacode
+  webrick
 
 RUBY VERSION
    ruby 3.3.0p0
 
 BUNDLED WITH
-   2.5.6
+   2.6.9
